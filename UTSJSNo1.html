@@ -16,30 +16,71 @@
     </h1>
     <script>
         class Hewan {
-            constructor(nama,warna,jmlhkaki, sifat) {
-                this.nama     = nama;
-                this.warna    = warna;
+            constructor(nama, warna, jmlhkaki, sifat) {
+                this.nama = nama;
+                this.warna = warna;
                 this.jmlhkaki = jmlhkaki;
-                this.sifat  = sifat;
+                this.sifat = sifat;
             }
             karnivora(daging) {
                 console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} memakan ${daging}`);
             }
-            herbivora(sayur){
+            herbivora(sayur) {
                 console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} memakan ${sayur}`);
             }
-            mamalia(susu){
+            mamalia(susu) {
                 console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} meminum ${susu}`);
             }
-            reptil(makanan){
+            reptil(makanan) {
                 console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} memakan ${makanan}`);
             }
 
         }
-        const hewan1 = new Hewan('macan','merah',5,'baik');
-        const hewan2 = new Hewan('kelinci','kuning',3,'amanah');
-        const hewan3 = new Hewan('paus','ijo',0,'kocak');
+        const hewan1 = new Hewan('macan', 'merah', 5, 'baik');
+        const hewan2 = new Hewan('kelinci', 'kuning', 3, 'amanah');
+        const hewan3 = new Hewan('paus', 'ijo', 0, 'kocak');
         console.log(hewan1.karnivora("ayam"));
+
+        var btn1 = document.getElementById("btn1");
+        let tombol123 = document.getElementById("tombol");
+        document.getElementById("remove").removeEventListener("click", function () {
+
+        });
+
+
+        btn1.addEventListener("dblclick", function () {
+            alert("tombol di klik 2x");
+        });
+        btn1.addEventListener("click", function () {
+            let h2baru = document.createElement("h2");
+            // let just = document.createTextNode("berhasil");
+            h2baru.innerText = "berhasil";
+            h2baru.id = kopi;
+            kopi.appendChild(h2baru);
+
+        });
+
+        tombol123.addEventListener("mouseover", function () {
+            let h3baru = document.createElement("h3");
+            h3baru.innerText = "xrpl merah";
+            h3baru.id = faiz;
+            faiz.appendChild(h3baru);
+            h3baru.style.color = "red"
+            // h3baru.appendChild(ga);
+            // h3baru.style.color = "red";
+            // h3baru.innerHTML;
+        });
+        tombol123.addEventListener("mouseleave", function () {
+            let h3baru = document.createElement("h3");
+            h3baru.innerText = "xrpl hijau";
+            h3baru.id = mq;
+            mq.appendChild(h3baru);
+            h3baru.style.color = "green"
+        });
+        function remove() {
+            const ilang = document.getElementById("ilang");
+            clear.ilang()
+        };
     </script>
 </body>
 
