@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adada.css">
+    
+</head>
+
+<body id="ilang">
+    <h1>UTSJAVASCRIPT
+        <br>
+        nama : faiz zulkarnain
+        <br>
+        kelas : xrpl
+    </h1>
+    <button id="btn1">Clickme</button>
+    <div id="kopi"></div>
+ 
+    
+    <div id="faiz"></div>
+    
+    <button id="tombol" class="tombol">Mouse in & out</button>  <div id="mq"></div>
+   
+   
+    <button id="remove" onclick="remove()">Remove button</button>
+    <script>
+                
+                var btn1 = document.getElementById("btn1");
+                let tombol123 = document.getElementById("tombol");
+                 document.getElementById("remove").removeEventListener("click",function(){
+                    
+                 });
+    
+
+     btn1.addEventListener("dblclick", function(){
+      alert("tombol di klik 2x");
+    });
+    btn1.addEventListener("click",function(){
+        let h2baru = document.createElement("h2");
+            // let just = document.createTextNode("berhasil");
+            h2baru.innerText = "berhasil";
+            h2baru.id = kopi;
+            kopi.appendChild(h2baru);
+          
+    });
+
+    tombol123.addEventListener("mouseover",function(){
+    let h3baru = document.createElement("h3");
+       h3baru.innerText = "xrpl merah";
+       h3baru.id = faiz;
+       faiz.appendChild(h3baru);
+       h3baru.style.color = "red"
+        // h3baru.appendChild(ga);
+        // h3baru.style.color = "red";
+        // h3baru.innerHTML;
+    });
+    tombol123.addEventListener("mouseleave",function(){
+        let h3baru = document.createElement("h3");
+       h3baru.innerText = "xrpl hijau";
+       h3baru.id = mq;
+       mq.appendChild(h3baru);
+       h3baru.style.color = "green"
+    });
+function remove(){
+const ilang = document.getElementById("ilang");
+clear.ilang()
+};
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        Uts js no1
+        <br>
+        m faiz xrpl
+    </h1>
+    <script>
+        class Hewan {
+            constructor(nama,warna,jmlhkaki, sifat) {
+                this.nama     = nama;
+                this.warna    = warna;
+                this.jmlhkaki = jmlhkaki;
+                this.sifat  = sifat;
+            }
+            karnivora(daging) {
+                console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} memakan ${daging}`);
+            }
+            herbivora(sayur){
+                console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} memakan ${sayur}`);
+            }
+            mamalia(susu){
+                console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} meminum ${susu}`);
+            }
+            reptil(makanan){
+                console.log(`${this.nama} ${this.warna} ${this.sifat} dengan jumlah kaki ${this.jmlhkaki} memakan ${makanan}`);
+            }
+
+        }
+        const hewan1 = new Hewan('macan','merah',5,'baik');
+        const hewan2 = new Hewan('kelinci','kuning',3,'amanah');
+        const hewan3 = new Hewan('paus','ijo',0,'kocak');
+        console.log(hewan1.karnivora("ayam"));
+    </script>
+</body>
+
+</html>
